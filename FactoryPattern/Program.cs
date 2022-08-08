@@ -21,7 +21,7 @@ namespace FactoryPattern
                 Console.WriteLine("\n\nWelcome to the University Student database.  Select an option: ");
                 Console.WriteLine("\t1. Enter a new student.\n\t2. Show student list.\n\t3. Exit");
 
-                ConsoleKeyInfo key = Console.ReadKey(false);
+                ConsoleKeyInfo key = Console.ReadKey(true);
 
                 switch(key.KeyChar) {
                     case '3':
@@ -41,7 +41,7 @@ namespace FactoryPattern
                         break;
                     case '1':
                         Console.WriteLine("\n\nEnter type of student to create:\n\t1. Graduate\n\t2. Undergraduate\n\t3. Non-degree-seeking");
-                        char k = Console.ReadKey(false).KeyChar;
+                        char k = Console.ReadKey(true).KeyChar;
                         StudentTypes st = k == '1' ? StudentTypes.Graduate : (k == '2' ? StudentTypes.Undergraduate : StudentTypes.NonDegreeSeeking);
                         IStudent newStudent = StudentFactory.CreateStudent(st);
                         if(newStudent == null) {

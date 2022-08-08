@@ -51,18 +51,18 @@ namespace FactoryPattern
 
         //Need to add error handling if e.g. user enters a letter instead of numbers for age:
         public virtual void RequestStudentInfo() {
-            Console.WriteLine("Please enter student information in order to create a new student.  All fields are required.");
+            Console.WriteLine("\nPlease enter student information in order to create a new student.  All fields are required.");
             Console.WriteLine("\tName: ");
-            this.Name = Console.ReadLine();
+            Name = Console.ReadLine();
             Console.WriteLine("\tAge: ");
-            this.Age = Convert.ToInt32(Console.ReadLine());
+            Age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\tDoes student qualify for in-state tuition?  [Enter 1 for yes or 0 for no.]");
-            char tmp = Console.ReadKey().KeyChar;
-            if(tmp == '1') this.IsInState = true;
-            else if(tmp == '0') this.IsInState = false;
+            char tmp = Console.ReadKey(true).KeyChar;
+            if(tmp == '1') IsInState = true;
+            else if(tmp == '0') IsInState = false;
             else {
                 Console.WriteLine("Invalid input.  Student marked as out-of-state for now.");
-                this.IsInState = false;
+                IsInState = false;
                 Console.ReadKey(true);
             }         
         }
@@ -87,9 +87,9 @@ namespace FactoryPattern
         public override void SetStudentInfo()
         {
             IsGraded = true;
-            this.StudentType = "Graduate";
-            this.RequestStudentInfo();
-            this.StudentIDNumber = GenerateNewID();
+            StudentType = "Graduate";
+            RequestStudentInfo();
+            StudentIDNumber = GenerateNewID();
         }
     }
 
@@ -102,10 +102,10 @@ namespace FactoryPattern
         
         public override void SetStudentInfo()
         {
-            this.IsGraded = true;
-            this.StudentType = "Undergraduate";
+            IsGraded = true;
+            StudentType = "Undergraduate";
             RequestStudentInfo();
-            this.StudentIDNumber = GenerateNewID();
+            StudentIDNumber = GenerateNewID();
         }
     }
 
@@ -117,10 +117,10 @@ namespace FactoryPattern
         }
         public override void SetStudentInfo()
         {
-            this.IsGraded = false;
-            this.StudentType = "Non-degree-seeking";
+            IsGraded = false;
+            StudentType = "Non-degree-seeking";
             RequestStudentInfo();
-            this.StudentIDNumber = GenerateNewID();
+            StudentIDNumber = GenerateNewID();
         }
     }
 
