@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryPattern
+namespace StudentList
 {
     public interface IStudent
     {
@@ -24,8 +24,6 @@ namespace FactoryPattern
         Undergraduate,
         NonDegreeSeeking
     }
-
-
     public static class StudentFactory
     {
         public static IStudent CreateStudent(StudentTypes studentType)

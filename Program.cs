@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryPattern
+namespace StudentList
 {
     internal class Program
     {
@@ -33,7 +33,7 @@ namespace FactoryPattern
                             break;
                         }
                         Console.WriteLine("\n\n------------------------------------------");
-                        Console.WriteLine("----Student Name----------Student ID-----");
+                        Console.WriteLine("----Student ID----------Student Name-----");
                         Console.WriteLine("------------------------------------------");
                         foreach(var v in studentList) Console.WriteLine($"\t{v.Key}\t\t{v.Value}");
                         Console.WriteLine("\n\nPress any key to return to main menu.");

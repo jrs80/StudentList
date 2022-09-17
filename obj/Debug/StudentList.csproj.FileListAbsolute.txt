@@ -1,0 +1,8 @@
+C:\Git_Repos\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe.config
+C:\Git_Repos\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe
+C:\Git_Repos\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.pdb
+C:\Git_Repos\FactoryPattern\FactoryPattern\obj\Debug\StudentList.csproj.AssemblyReference.cache
+C:\Git_Repos\FactoryPattern\FactoryPattern\obj\Debug\StudentList.csproj.SuggestedBindingRedirects.cache
+C:\Git_Repos\FactoryPattern\FactoryPattern\obj\Debug\StudentList.csproj.CoreCompileInputs.cache
+C:\Git_Repos\FactoryPattern\FactoryPattern\obj\Debug\FactoryPattern.exe
+C:\Git_Repos\FactoryPattern\FactoryPattern\obj\Debug\FactoryPattern.pdb
